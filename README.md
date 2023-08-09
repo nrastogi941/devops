@@ -1,0 +1,1 @@
+This is simple project just for learning devops(mostlly docker and jenkins)

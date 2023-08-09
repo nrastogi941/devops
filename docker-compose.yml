@@ -1,0 +1,20 @@
+services:
+  nimit-docker:
+    build: .
+    ports:
+      - 5000:5000
+    volumes:
+      - nimit-volume:\app\volume
+
+  db:
+    image: mysql:8.0
+    ports:
+      - 3306:3306
+    env_file:
+      - .env
+    volumes:
+      - dbdata:\app\dbvolume
+
+volumes:
+  nimit-volume:
+  dbdata:
