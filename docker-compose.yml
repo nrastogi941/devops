@@ -1,6 +1,6 @@
 services:
   nimit-docker:
-    build: .
+    image: nrastogi941/python-devops:latest
     ports:
       - 5000:5000
     volumes:
